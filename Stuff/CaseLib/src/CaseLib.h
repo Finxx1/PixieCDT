@@ -1,10 +1,10 @@
-// StrLib.h a string manipulation library, not to be confused with an overall string library
+// CaseLib.h a string manipulation library, not to be confused with an overall string library
 
 #include <string.h> // Strlen
 #include <stdlib.h> // Memory management
 #include <time.h>   // Seeding srand()
 
-char* SLToUpperCase(const char* string) {
+char* CLToUpperCase(const char* string) {
   int stringlength = strlen(string);
   char* r = calloc(stringlength + 1, 1);
   for (int i = 0; i < stringlength; i++) {
@@ -17,7 +17,7 @@ char* SLToUpperCase(const char* string) {
   return r;
 }
 
-char* SLToLowerCase(const char* string) {
+char* CLToLowerCase(const char* string) {
   int stringlength = strlen(string);
   char* r = calloc(stringlength + 1, 1);
   for (int i = 0; i < stringlength; i++) {
@@ -30,7 +30,7 @@ char* SLToLowerCase(const char* string) {
   return r;
 }
 
-char* SLToSpongeBobCase(const char* string) {
+char* CLToSpongeBobCase(const char* string) {
   srand(time(NULL));
   int stringlength = strlen(string);
   char* r = calloc(stringlength + 1, 1);
