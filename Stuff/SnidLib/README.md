@@ -1,6 +1,6 @@
 # SnidLib
 
-SnidLib is a simple library that implements the snid operator. The snid operator concatenates strings.
+SnidLib is a simple library that implements the snid operator. The snid operator concatenates integers.
 
 # Usage
 
