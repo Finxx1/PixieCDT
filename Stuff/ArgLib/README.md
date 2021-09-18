@@ -29,7 +29,7 @@ void test2(int i) {
 }
 
 int main(int argc, char* argv[]) {
-  ALParseArgs(argc, argv, 1, "-a", test1, "-b", test2);
+  ALParseArgs(argc, argv, 2, "-a", test1, "-b", test2);
   return 0;
 }
 ```
