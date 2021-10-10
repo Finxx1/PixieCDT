@@ -6,6 +6,12 @@
 
 #define SL_STRING_TOO_BIG 420
 
+int SLQuickSnid(int a, int b) {
+    for (int i = b; i; i /= 10)
+        a *= 10;
+    return a + b;
+}
+
 int SLSnid(int a, int b) {
   char buf1[11]; // Digit count of 32-bit integer limit + 1 for NUL character
   char buf2[11];
