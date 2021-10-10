@@ -15,7 +15,7 @@ The rest of the parameters follow a pattern:
 The text to look for.
 The function to call if it is found.
 
-The function should return `void` and take in an integer. That integer is the position in argv the text was found. From there, you can do what you want.
+The function should return `void`, taking in an integer and a char**. That integer is the position in argv the text was found, and the char** is a reference to the argv passed into ALParseArgs. From there, the function can do whatever you want.
 
 # Example
 
@@ -29,7 +29,7 @@ void test2(int i) {
 }
 
 int main(int argc, char* argv[]) {
-  ALParseArgs(argc, argv, 1, "-a", test1, "-b", test2);
+  ALParseArgs(argc, argv, 2, "-a", test1, "-b", test2);
   return 0;
 }
 ```

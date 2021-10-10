@@ -8,17 +8,17 @@
 #define AL_SUCCESS   1
 #define AL_FAIL      0    // IDK if I will use this, but why not put it here?
 
-typedef void (*argf_t)(int); // Function pointer typedef I think, might be something else though.
+typedef void (*argf_t)(int, char**); // Function pointer typedef I think, might be something else though.
 
 // ARGT: the string to check for; ARGF: the function to run if a match is found
-int ALParseArg(int argc, char** argv, const char* argt, void (*argf)(int)) {
+int ALParseArg(int argc, char** argv, const char* argt, void (*argf)(int, char**)) {
   if (argc == 1) {
     return AL_ZERO_ARGS;
   }
   
   for (int i = 1; i < argc; i++) {
     if (!strcmp(argv[i], argt)) {
-      (argf)(i);
+      (argf)(i, argv);
       return AL_SUCCESS;
     }
   }
