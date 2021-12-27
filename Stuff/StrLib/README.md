@@ -1,6 +1,6 @@
-# SnidLib
+# StrLib
 
-SnidLib is a simple library that implements the snid operator. The snid operator concatenates integers.
+StrLib is a simple library that adds a custom string data type.
 
 # Usage
 
