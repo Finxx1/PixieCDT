@@ -8,3 +8,4 @@ My C development tools
 + INILib - A library for reading keys from INI files.
 + StrLib - A library for creating strings.
 + LogLib - A library for logging stuff.
++ TimeLib - A library for getting the time.
