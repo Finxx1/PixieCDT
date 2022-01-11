@@ -11,13 +11,13 @@ int TLGetSeconds()
 Gets the current second in the minute.
 
 ```c
-int TLGetMinutes
+int TLGetMinutes()
 ```
 
 Gets the current minute of the hour.
 
 ```c
-int TLGetHours
+int TLGetHours()
 ```
 
 Gets the current hour of the day.
