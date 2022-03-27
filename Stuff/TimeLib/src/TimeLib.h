@@ -16,7 +16,7 @@ int TLGetMinutes() {
 
 int TLGetHours() {
   long UTS = time(NULL)/60/60;
-  while (UTS >= 24)
-    UTS -= 24;
+  while (UTS >= 60)
+    UTS -= 60;
   return (int)UTS;
 }
