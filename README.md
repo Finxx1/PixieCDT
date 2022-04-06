@@ -9,3 +9,4 @@ My C development tools
 + StrLib - A library for creating strings.
 + LogLib - A library for logging stuff.
 + TimeLib - A library for getting the time.
++ MemLib - A library that provides useful macros for memory allocation.
