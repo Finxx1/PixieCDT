@@ -1,4 +1,4 @@
-// Made by Finxx 1/7/2021 in school while in math class.
+// Made by Finxx 1/7/2022 in school while in math class.
 
 #include <stdio.h>
 #include <time.h>
